@@ -10,7 +10,7 @@ and according to the modern Gregorian calander it should print leap or common ye
 */
 
 #include <iostream>
-using namespace std;
+// using namespace std;
 
 int main() {
     /*if (year is not divisible by 4) then (it is a common year)
@@ -19,17 +19,17 @@ else if (year is not divisible by 400) then (it is a common year)
 else (it is a leap year)*/
     int yearInput;
 
-    cout << "Enter year: ";
-    cin >> yearInput;
+    std::cout << "Enter year: ";
+    std::cin >> yearInput;
 
     if(yearInput % 4 != 0) { 
-        cout << "\nCommon year" << endl;
+        std::cout << "\nCommon year" << std::endl;
     } else if(yearInput % 100 != 0) {
-        cout << "\nLeap year" << endl;
+        std::cout << "\nLeap year" << std::endl;
     } else if(yearInput % 400 != 0) { 
-        cout << "\nCommon year" << endl;
+        std::cout << "\nCommon year" << std::endl;
     } else {
-        cout << "\nLeap year" << endl;
+        std::cout << "\nLeap year" << std::endl;
     }
 
     return 0;

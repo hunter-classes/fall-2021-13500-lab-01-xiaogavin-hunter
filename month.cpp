@@ -10,7 +10,7 @@ and print the number of days in that month taking consideration of leap years.
 */
 
 #include <iostream>
-using namespace std;
+// using namespace std;
 
 int main() {
     /*
@@ -35,10 +35,10 @@ int main() {
    int yearInput, monthInput;
    bool isLeapYear; 
 
-    cout << "Enter year: ";
-    cin >> yearInput;
-    cout << "Enter month: ";
-    cin >> monthInput;
+    std::cout << "Enter year: ";
+    std::cin >> yearInput;
+    std::cout << "Enter month: ";
+    std::cin >> monthInput;
 
     if(yearInput % 4 != 0) { 
         isLeapYear = false;
@@ -51,14 +51,14 @@ int main() {
     }
 // 2018 4 || 4/6/9/11
     if(monthInput % 2 != 0 && monthInput <= 7 || monthInput % 2 == 0 && monthInput >= 8) {
-        cout << "\n31 days" << endl;
+        std::cout << "\n31 days" << std::endl;
     } else if(monthInput % 2 == 0 && monthInput <= 6 || monthInput % 2 != 0 && monthInput >= 9) {
         if(monthInput == 2 && isLeapYear) {
-            cout << "\n29 days" << endl;
+            std::cout << "\n29 days" << std::endl;
         } else if(monthInput == 2 && !isLeapYear) {
-            cout << "\n28 days" << endl;
+            std::cout << "\n28 days" << std::endl;
         } else { 
-            cout << "\n30 days" << endl;
+            std::cout << "\n30 days" << std::endl;
         }
     }
 

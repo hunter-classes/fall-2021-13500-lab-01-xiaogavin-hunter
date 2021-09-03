@@ -10,30 +10,30 @@ these numbers to figure out the smallest number.
 */
 
 #include <iostream>
-using namespace std;
+// using namespace std;
 
 int main() {
     int firstNumber, secondNumber, thirdNumber; 
     
     // Takes the numbers, user input
-    cout << "Enter the first number: "; 
-    cin >> firstNumber; 
-    cout << "Enter the second number: ";
-    cin >> secondNumber;
-    cout << "Enter the third number: ";
-    cin >> thirdNumber;
+    std::cout << "Enter the first number: "; 
+    std::cin >> firstNumber; 
+    std::cout << "Enter the second number: ";
+    std::cin >> secondNumber;
+    std::cout << "Enter the third number: ";
+    std::cin >> thirdNumber;
 
     // Compares the numbers, firstNumber to secondNumber, then that number to thirdNumber
     if(firstNumber < secondNumber) { 
         if(firstNumber < thirdNumber) { 
-            cout << "\nThe smaller of the three is: " << firstNumber << endl;        
+            std::cout << "\nThe smaller of the three is: " << firstNumber << std::endl;        
         } else { 
-            cout << "\nThe smaller of the three is: " << thirdNumber << endl;   
+            std::cout << "\nThe smaller of the three is: " << thirdNumber << std::endl;   
         }
     } else if(secondNumber < thirdNumber) { 
-        cout << "\nThe smaller of the three is: " << secondNumber << endl;   
+        std::cout << "\nThe smaller of the three is: " << secondNumber << std::endl;   
     } else {
-        cout << "\nThe smaller of the three is: " << thirdNumber << endl;   
+        std::cout << "\nThe smaller of the three is: " << thirdNumber << std::endl;   
     }
 
     return 0;
